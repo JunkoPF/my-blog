@@ -11,7 +11,7 @@ const Tags = ({
     <Layout>
         {
             group.map((tagInfo) => (
-                <Link to={`/tags/${kebabCase(tagInfo.tag)}/`}>
+                <Link to={`/tag/${kebabCase(tagInfo.tag)}/`}>
                     {tagInfo.tag} ({tagInfo.totalCount})
                 </Link>
             ))

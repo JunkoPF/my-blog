@@ -1,6 +1,7 @@
 'use strict'
 
 const path = require('path');
+const createTagsPages = require('./create-tags-pages');
 
 const createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
@@ -51,7 +52,9 @@ const createPages = async ({ graphql, actions }) => {
                 slug: node.fields.slug,
             },
         })
-    })
+    });
+
+    await createTagsPages({ graphql, actions });
 }
 
 module.exports = createPages;

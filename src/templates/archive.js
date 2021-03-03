@@ -9,7 +9,7 @@ type Props = {
     data: AllMarkdownRemark,
 }
 
-const HomePage = ({ data }: Props) => {
+const Archive = ({ data }: Props) => {
     const { edges } = data.allMarkdownRemark;
     return (
         <Layout>
@@ -37,4 +37,4 @@ export const query = graphql`
     }
 `
 
-export default HomePage;
+export default Archive;
