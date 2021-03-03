@@ -1,0 +1,47 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-emotion": "^5.4.0",
+    "gatsby-plugin-flow": "^1.10.0",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-plugin-sharp": "^2.14.3",
+    "gatsby-remark-autolink-headers": "^2.11.0",
+    "gatsby-remark-copy-linked-files": "^2.10.0",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "^3.11.1",
+    "gatsby-remark-katex": "^3.10.0",
+    "gatsby-remark-prismjs": "^3.13.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-remark-responsive-iframe": "^2.11.0",
+    "gatsby-remark-smartypants": "^2.10.0",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-remark": "^2.16.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
