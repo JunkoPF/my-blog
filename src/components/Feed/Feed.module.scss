@@ -1,0 +1,36 @@
+@import '../../assets/scss/variables';
+
+.feed {
+    &__content {
+        margin: 20px 0 20px 0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        background: $background-gradient;
+        color: white;
+
+        border-radius:25px;
+        box-shadow: 4px 4px 10px rgb(20, 20, 20);
+
+
+        &__title {
+            margin: 0 0 15px 0;
+            font-size: 3rem;
+            color: white;
+            align-self: flex-start;
+        }
+
+        &__info {
+            align-self:flex-end;
+
+            span {
+                margin: 10px;
+                font-size: 1.2rem;
+            }
+        }
+
+        &__description {
+            font-size: 1.2rem;
+        }
+    }
+}

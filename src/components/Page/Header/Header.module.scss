@@ -1,0 +1,17 @@
+@import '../../../assets/scss/variables';
+
+.header {
+    padding: 0;
+    max-width: 100%;
+    background: #1A2980;
+    color: white;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        max-width: 75%;
+        margin:auto;
+    }
+}

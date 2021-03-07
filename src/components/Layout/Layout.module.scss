@@ -1,40 +1,7 @@
+
 .layout {
-    margin:auto;
-    max-width:70%;
+    max-width:100%;
     
     display: flex;
     flex-direction: column;
-
-    &__title {
-        font-size: 3rem;
-    }
-
-    &__discription {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-        &__subtitle {
-            font-size: 2.5rem;
-        }
-
-        &__author {
-            font-size:2rem;
-        }
-    }
-
-    &__content {
-        display: flex;
-
-        &__sidebar {
-            font-size:1.5rem;
-            flex:0 0 20%;
-        }
-
-        &__text {
-            flex:0 0 80%;
-            max-width: 80%;
-            font-size: 1rem;
-        }
-    }
 }

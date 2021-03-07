@@ -2,6 +2,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Feed from '../components/Feed';
+import Page from '../components/Page';
+
 import { graphql } from 'gatsby';
 import type { AllMarkdownRemark } from '../types';
 
@@ -15,8 +17,10 @@ const Tag = ({ data, pageContext }: Props) => {
     const { tag } = pageContext;
     return (
         <Layout>
-            <h3>{tag}</h3>
+            <Page>
+            <h3>Tag: {tag}</h3>
             <Feed edges={edges} />
+            </Page>
         </Layout>
     )
 }
@@ -31,7 +35,7 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
-                        date
+                        date(formatString: "YYYY/MM/DD")
                         category
                     }
                 }
