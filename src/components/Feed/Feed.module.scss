@@ -1,27 +1,28 @@
 @import '../../assets/scss/variables';
 
 .feed {
+
+    width: 70%;
+    margin: auto;
+
     &__content {
         margin: 20px 0 20px 0;
         padding: 40px;
         display: flex;
         flex-direction: column;
-        background: grey;
-        color: white;
+        background: rgb(200, 200, 200);
 
-        border-radius:25px;
-        box-shadow: 4px 4px 10px rgb(20, 20, 20);
-
+        border-radius: 5px;
+        border: 2px solid rgb(180,180,180);
 
         &__title {
             margin: 0 0 15px 0;
             font-size: 3rem;
-            color: white;
             align-self: flex-start;
         }
 
         &__info {
-            align-self:flex-end;
+            align-self: flex-end;
 
             span {
                 margin: 10px;

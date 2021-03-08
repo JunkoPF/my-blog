@@ -2,6 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
+import Introbar from '../components/Introbar';
 import Feed from '../components/Feed';
 import { graphql } from 'gatsby';
 import type { AllMarkdownRemark } from '../types';
@@ -15,6 +16,7 @@ const HomePage = ({ data }: Props) => {
     return (
         <Layout>
             <Page>
+                <Introbar />
                 <Feed edges={edges} isIndex />
             </Page>
         </Layout>

@@ -2,17 +2,17 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
+import Article from '../components/Article';
 
 export default ({ data }) => {
     const post = data.markdownRemark;
     return (
         <Layout>
             <Page>
-                <div>
-                    <h1>{post.frontmatter.title}</h1>
-                    <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-                </div>
-            
+                <Article
+                    title={post.frontmatter.title}
+                    html={post.html}
+                />
             </Page>
         </Layout>
     )

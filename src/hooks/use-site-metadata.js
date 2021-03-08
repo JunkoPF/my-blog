@@ -6,11 +6,16 @@ const useSiteMetadata = () => {
         graphql`
             query MyQuery {
                 site(siteMetadata: {}) {
-                siteMetadata {
-                    title
-                    subtitle
-                    author
-                }
+                    siteMetadata {
+                        title
+                        subtitle
+                        description
+                        author {
+                            name
+                            photo
+                            intro
+                        }
+                    }
                 }
             }
         `

@@ -5,10 +5,17 @@
  */
 
 module.exports = {
+    pathPrefix: "/",
     siteMetadata: {
-        title: "polythylene's Blog",
+        title: "Jamarcus's Blog",
         subtitle: "coming soon...",
-        author: "polythylene",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum sit delectus in omnis doloremque laboriosam provident reiciendis. Rerum, facere?",
+        author: {
+            name: "Guadalupe",
+            photo: "photo.jpg",
+            intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde dolores fuga aliquam similique cum ea non tempora quo ducimus?",
+        }
+
     },
     plugins: [
         {

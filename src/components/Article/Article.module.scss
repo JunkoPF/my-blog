@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables";
+
+.article {
+
+    width: 70%;
+    margin: auto;
+    margin-top: $header-height+3rem;
+    
+    &__title {
+        font-size: 3rem;
+    }
+
+    &__content {
+
+    }
+}
