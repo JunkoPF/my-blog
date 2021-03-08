@@ -1,0 +1,19 @@
+.tagsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    &__content {
+        margin: 5px;
+
+        &__tag {
+            font-size: 1.5rem;
+            margin:3px;
+        }
+
+        &__count {
+            font-size: 0.8rem;
+        }
+    }
+}

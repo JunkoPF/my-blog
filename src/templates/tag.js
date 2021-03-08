@@ -27,7 +27,8 @@ const Tag = ({ data, pageContext }: Props) => {
 
 export const query = graphql`
     query($tag: String) {
-        allMarkdownRemark(filter: {frontmatter: {tags: {in: [$tag]}}}) {
+        allMarkdownRemark(filter: {frontmatter: {tags: {in: [$tag]}}},
+            sort: {order: DESC, fields: frontmatter___date}) {
             edges {
                 node {
                     fields {
