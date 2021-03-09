@@ -9,7 +9,7 @@ const Feed = ({ edges, isIndex }: Props) => {
                 {edges.map((edge) => (
                     <div className={styles['feed__content']}>
                         <Link to={edge.node.fields.slug}>
-                            <h1 className={styles['feed__content__title']}>
+                            <h1 className={isIndex?styles['feed__content__title__index']: styles['feed__content__title']}>
                                 {edge.node.frontmatter.title}
                             </h1>
                         </ Link>

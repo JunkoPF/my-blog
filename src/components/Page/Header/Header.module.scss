@@ -1,23 +1,33 @@
 @import '../../../assets/scss/variables';
 
 .header {
-    position: fixed;
-
     padding: 0;
     width: 100%;
-    background: rgba(128, 128, 128, 0.7);
 
-    border-width: 0 0 2px 0;
-    border-style: solid;
-    border-color: rgba(180, 180, 180, 0.7);
+    background: rgb(180,180,180);
+
+    border-style: solid; 
+    border-color: rgb(150,150,150);
+    border-width: 0 0 3px 0;
 
     &__content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    &__top {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        max-width: 75%;
-        height: $header-height;
-        margin: auto;
+        margin: 1rem 0 1rem 0;
     }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

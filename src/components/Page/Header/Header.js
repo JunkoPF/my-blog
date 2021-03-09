@@ -1,16 +1,28 @@
 import React from 'react';
 import Title from './Title';
 import Menu from './Menu';
+import Introbar from './Introbar';
+import SNSLinks from '../../SNSLinks';
 import styles from './Header.module.scss';
 
-const Header = () => {
+const Header = ({ isIndex }) => {
     return (
-        <div className={styles['header']}>
+        <header className={styles['header']}>
             <div className={styles['header__content']}>
-                <Title />
-                <Menu />
+                <div className={styles['header__top']}>
+                    <Title />
+                    <Menu />
+                </div>
+                    {
+                        isIndex ? (
+                            <div className={styles['header__bottom']}>
+                                <Introbar />
+                                <SNSLinks />
+                            </div>
+                        ) : []
+                    }
             </div>
-        </div>
+        </header>
     )
 }
 

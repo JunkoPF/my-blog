@@ -1,8 +1,14 @@
 @import '../../assets/scss/variables';
 
 .page {
+    display: flex;
+    flex-direction: column;
     &__content {
         width: 100%;
         margin: 0 auto 0 auto;
+    }
+
+    &__header {
+        
     }
 }
