@@ -1,11 +1,38 @@
 @import '../../assets/scss/variables';
 
+
 .feed {
 
     width: 70%;
     margin: auto;
 
-    &__content {
+    &__lastest {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 0;
+
+        &__title {
+            font-size: 3rem;
+            width: 70%;
+        }
+
+        &__socialImage {
+            height: 500px;
+            margin: auto;
+            justify-self: center;
+        }
+
+        &__info {
+
+        }
+
+        &__description {
+
+        }
+    }
+
+
+    &__previous {
         margin: 20px 0 20px 0;
         padding: 40px;
         display: flex;
@@ -21,7 +48,6 @@
             align-self: flex-start;
 
             &__index {
-                @extend .feed__content__title;
                 width: 70%;
             }
         }
