@@ -2,6 +2,15 @@ import React from 'react';
 import { Link } from 'gatsby'
 import styles from './Feed.module.scss';
 
+const getTags = (tags, isLastest) => (
+    <div className={styles[`feed__${isLastest ? 'lastest' : 'previous'}__tags`]}>
+        {
+            tags.map((tag) => (
+                <span>#{tag}</ span>
+            ))
+        }
+    </div>
+);
 
 const Feed = ({ edges, isIndex }: Props) => {
     if (edges.length === 0) {
@@ -12,23 +21,32 @@ const Feed = ({ edges, isIndex }: Props) => {
         return (
             <div className={styles['feed']}>
                 <div className={styles['feed__lastest']} >
-                    <Link to={lastestEdge.node.fields.slug}>
-                        <h1 className={styles['feed__lastest__title']}>
+                    <div className={styles['feed__lastest__info']}>
+                        <span>{lastestEdge.node.frontmatter.category}</span>
+                        <span>/</span>
+                        <span>{lastestEdge.node.frontmatter.date}</span>
+                    </div>
+                    <Link
+                        className={styles['feed__lastest__title']}
+                        to={lastestEdge.node.fields.slug}
+                    >
+                        <h1>
                             {lastestEdge.node.frontmatter.title}
                         </h1>
+                    </Link>
+                    <Link
+                        className={styles['feed__lastest__socialImage']}
+                        to={lastestEdge.node.fields.slug}
+                    >
                         <img
-                            className={styles['feed__lastest__socialImage']}
                             src={lastestEdge.node.frontmatter.socialImage}
                             alt={lastestEdge.node.frontmatter.title}
                         />
                     </Link>
-                    <div className={styles['feed__lastest__info']}>
-                        <span>{lastestEdge.node.frontmatter.category}</span>
-                        <span>{lastestEdge.node.frontmatter.date}</span>
-                    </div>
                     <p className={styles['feed__lastest__description']}>
                         {lastestEdge.node.frontmatter.description}
                     </p>
+                    {getTags(lastestEdge.node.frontmatter.tags, true)}
                 </div>
                 {
                     previousEdges.map((edge) => (

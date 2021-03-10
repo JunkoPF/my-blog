@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap');
 
 // Color
-$main-color: #ffee00;
-
-$background-gradient: linear-gradient(75deg,#1A2980,#26D0CE);
+$description-text-color:hsl(0, 0%, 50%);
+$title-text-color:hsl(0,0%,30%);
 
 // Font
 $default-font-list: "Noto Sans SC", serif;
 
+// FontSize
+$homepage-lastest-title-size: 2.5rem;
+$homepage-lastest-description-size: 1.2rem;
+$homepage-previous-title-size: 1.8rem;
+
+// ImageSize
+$homepage-socialImage-height: 600px;
+$homepage-socialImage-width: 1000px;
+
 // 
 $header-height: 5rem;
+
+//Lineheight
+$description-line-height: 2;

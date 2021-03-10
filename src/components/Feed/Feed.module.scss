@@ -3,31 +3,68 @@
 
 .feed {
 
-    width: 70%;
     margin: auto;
 
     &__lastest {
         display: flex;
         flex-direction: column;
-        margin: 20px 0 20px 0;
+
+        align-items: center;
+
+        margin: 3rem 0 3rem 0;
+
+        &__info {
+            width: 50%;
+
+            display: flex;
+            flex-direction: row;
+            
+            span {
+                padding-right:1rem
+            }
+        }
 
         &__title {
-            font-size: 3rem;
-            width: 70%;
+            width: 50%;
+
+            h1 {
+                font-size: $homepage-lastest-title-size;
+                color:$title-text-color;
+            }
+
         }
 
         &__socialImage {
-            height: 500px;
-            margin: auto;
-            justify-self: center;
-        }
+            
+            img {  
+                height: $homepage-socialImage-height;
+                width: $homepage-socialImage-width;
+                object-fit: cover;
 
-        &__info {
-
+                border-radius: 0.25rem;
+            }
         }
 
         &__description {
 
+            font-size: $homepage-lastest-description-size;
+            line-height: $description-line-height;
+
+            color: $description-text-color;
+
+            width:50%;
+        }
+
+        &__tags {
+            margin: 0 0 10px 0;
+            display: flex;
+            flex-direction: row;
+            
+            width: 50%;
+
+            span{
+                padding-right: 1rem;
+            }
         }
     }
 

@@ -1,15 +1,15 @@
 ---
-title: Humane Typography in the Digital Age
+title: 如果这篇文章吸引了你，对不起，其实我是故意的
 date: "2017-08-19T22:40:32.169Z"
 template: "post"
 draft: false
 slug: "humane-typography-in-the-digital-age"
-category: "Typography"
+category: "观点"
 tags:
-  - "Design"
-  - "Typography"
-  - "Web Development"
-description: "An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts."
+  - "心理学"
+  - "观点"
+  - "mental"
+description: "心理学上有一个喜好原理，简单的说，学校组织了一场篮球赛，本系和其他系的打比赛，本系赢了，即使你没有去参加比赛，也会把本系的胜利看成自己的胜利。当别人问起是谁赢了，你会说，是我们赢了。如果本系输了，别人问起你时，你不可能说，我们得了倒数第一，相反可能与这场比赛撇清关系，不愿意提及本系输了。"
 socialImage: "/media/42-line-bible.jpg"
 ---
 
