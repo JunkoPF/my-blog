@@ -11,7 +11,7 @@ module.exports = {
         subtitle: "coming soon...",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum sit delectus in omnis doloremque laboriosam provident reiciendis. Rerum, facere?",
         author: {
-            name: "Guadalupe",
+            name: "Polyethylene",
             photo: "photo.jpg",
             intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde dolores fuga aliquam similique cum ea non tempora quo ducimus?",
         }

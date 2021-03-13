@@ -4,10 +4,10 @@ import styles from './Menu.module.scss';
 
 const Menu = () => (
     <div className={styles['menu']}>
-        <span><Link to='/'>home</Link></span>
-        <span><Link to='/archive'>archive</Link></span>
-        <span><Link to='/about'>about</Link></span>
-        <span><Link to='/tags-list'>tags</Link></span>
+        <Link to='/'><span>home</span></Link>
+        <Link to='/archive'><span>archive</span></Link>
+        <Link to='/about'><span>about</span></Link>
+        <Link to='/tags-list'><span>tags</span></Link>
     </div>
 )
 

@@ -5,8 +5,12 @@ import styles from './Feed.module.scss';
 const getTags = (tags, isLastest) => (
     <div className={styles[`feed__${isLastest ? 'lastest' : 'previous'}__tags`]}>
         {
-            tags.map((tag) => (
-                <span>#{tag}</ span>
+            (tags || []).map((tag) => (
+                <span>
+                    <Link to={`/tag/${tag}`}>
+                        #{tag}
+                    </Link>
+                </ span>
             ))
         }
     </div>
@@ -48,29 +52,39 @@ const Feed = ({ edges, isIndex }: Props) => {
                     </p>
                     {getTags(lastestEdge.node.frontmatter.tags, true)}
                 </div>
+                <div className={styles['splitLine']}></div>
+
                 {
                     previousEdges.map((edge) => (
-                        <div className={styles['feed__content']}>
-                            <Link to={edge.node.fields.slug}>
-                                <h1 className={isIndex ? styles['feed__content__title__index'] : styles['feed__content__title']}>
-                                    {edge.node.frontmatter.title}
-                                </h1>
-                            </ Link>
-                            {
-                                isIndex ? (
-                                    <div className={styles['feed__content__info']}>
-                                        <span>{edge.node.frontmatter.category}</span>
-                                        <span>{edge.node.frontmatter.date}</span>
-                                    </div>
-                                ) : null
-                            }
-                            {
-                                isIndex ? (
-                                    <p className={styles['feed__content__description']}>
-                                        {edge.node.frontmatter.description}
-                                    </p>
-                                ) : null
-                            }
+                        <div className={styles['feed__previous']}>
+                            <Link
+                                className={styles['feed__previous__socialImage']}
+                                to={edge.node.fields.slug}
+                            >
+                                <img
+                                    src={edge.node.frontmatter.socialImage}
+                                    alt={edge.node.frontmatter.title}
+                                />
+                            </Link>
+                            <div className={styles['feed__previous__text']}>
+                                <div className={styles['feed__previous__info']}>
+                                    <span>{edge.node.frontmatter.category}</span>
+                                    <span>/</span>
+                                    <span>{edge.node.frontmatter.date}</span>
+                                </div>
+                                <Link
+                                    className={styles['feed__previous__title']}
+                                    to={edge.node.fields.slug}
+                                >
+                                    <h1>
+                                        {edge.node.frontmatter.title}
+                                    </h1>
+                                </ Link>
+                                <p className={styles['feed__previous__description']}>
+                                    {edge.node.frontmatter.description}
+                                </p>
+                                {getTags(edge.node.frontmatter.tags, false)}
+                            </div>
                         </div>
                     ))
                 }
