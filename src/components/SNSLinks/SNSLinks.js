@@ -19,7 +19,7 @@ const SNSLinks = () => {
             userName: 'polyethylene',
         }, {
             siteName: 'facebook',
-            userName: 'Lilyan',
+            userName: 'polyethylene',
         },
     ];
     return (

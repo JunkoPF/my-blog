@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
-import Feed from '../components/Feed';
+import Homepage from '../components/Homepage'
 import { graphql } from 'gatsby';
 import type { AllMarkdownRemark } from '../types';
 
@@ -10,12 +10,12 @@ type Props = {
     data: AllMarkdownRemark,
 }
 
-const HomePage = ({ data }: Props) => {
+const Home = ({ data }: Props) => {
     const { edges } = data.allMarkdownRemark;
     return (
         <Layout>
             <Page isIndex>
-                <Feed edges={edges} isIndex />
+                <Homepage edges={edges} />
             </Page>
         </Layout>
     )
@@ -43,4 +43,4 @@ export const query = graphql`
     }
 `
 
-export default HomePage;
+export default Home;

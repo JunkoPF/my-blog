@@ -31,8 +31,9 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
-                        date(formatString: "YYYY/MM/DD")
+                        date(formatString: "YYYY-MM-DD")
                         category
+                        tags
                     }
                 }
             }

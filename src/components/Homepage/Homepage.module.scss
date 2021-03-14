@@ -1,0 +1,141 @@
+@import '../../assets/scss/variables';
+
+
+.homepage {
+    margin: auto;
+
+    &__lastest {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        margin: 3rem 0 6rem 0;
+
+        &__info {
+            width: 50%;
+
+            display: flex;
+            flex-direction: row;
+            
+            span {
+                padding-right:1rem
+            }
+        }
+
+        &__title {
+            width: 50%;
+
+            h1 {
+                font-size: $homepage-lastest-title-size;
+                color:$title-text-color;
+            }
+
+        }
+
+        &__socialImage {
+            
+            img {  
+                height: $homepage-socialImage-height;
+                width: $homepage-socialImage-width;
+                object-fit: cover;
+
+                border-radius: 0.25rem;
+            }
+        }
+
+        &__description {
+
+            font-size: $homepage-lastest-description-size;
+            line-height: $description-line-height;
+
+            color: $description-text-color;
+
+            width:50%;
+        }
+
+        &__tags {
+            margin: 0 0 10px 0;
+            display: flex;
+            flex-direction: row;
+            
+            width: 50%;
+
+            span{
+                padding-right: 1rem;
+            }
+        }
+    }
+
+
+    &__previous {
+        
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+
+        margin: 6rem auto 6rem auto;
+
+        width: 60%;
+
+        &__socialImage {
+            img {
+                height: 200px;
+                width: 300px;
+                object-fit: scale-down;
+            }
+
+            margin-right: 2rem;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: row;
+            
+            span {
+                padding-right:1rem
+            }
+        }
+
+        &__title {
+
+            h1 {
+                font-size: $homepage-previous-title-size;
+                margin-bottom: 0;
+            }
+        }
+
+        &__description {
+            font-size: $homepage-previous-description-size;
+            line-height: $description-line-height;
+
+            color: $description-text-color;
+
+        }
+
+        &__tags {
+            margin: 0 0 10px 0;
+            display: flex;
+            flex-direction: row;
+            
+            span{
+                padding-right: 1rem;
+            }
+        }
+
+
+    }
+}
+
+.splitLine {
+    background: linear-gradient(to left,hsl(0,0%,100%),hsl(0,0%,40%),hsl(0,0%,60%),hsl(0,0%,40%),hsl(0,0%,100%));
+    height: 1px;
+    width: 80%;
+    margin:auto;
+}
