@@ -26,6 +26,8 @@
         &__title {
             width: 50%;
 
+            margin: 0.5rem 0 1.5rem 0;
+
             h1 {
                 font-size: $homepage-lastest-title-size;
                 color:$title-text-color;
@@ -104,6 +106,8 @@
         }
 
         &__title {
+
+            margin: 0.5rem 0 0 0;
 
             h1 {
                 font-size: $homepage-previous-title-size;

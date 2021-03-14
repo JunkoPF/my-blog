@@ -1,0 +1,14 @@
+
+.magic-link {
+    display: inline;
+    background-image: linear-gradient(hsla(0,0%,50%,30%),hsla(0,0%,50%,30%));
+    background-repeat: no-repeat;
+    background-size: 0% 40%;
+    background-position: 0 100%;
+    transition: background-size 0.5s ease-in-out;
+    z-index: -1;
+
+    &:hover {
+      background-size: 100% 40%;
+    }
+}

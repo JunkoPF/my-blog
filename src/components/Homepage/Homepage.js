@@ -35,7 +35,7 @@ const Homepage = ({ edges }: Props) => {
                         className={styles['homepage__lastest__title']}
                         to={lastestEdge.node.fields.slug}
                     >
-                        <h1>
+                        <h1 className='magic-link'>
                             {lastestEdge.node.frontmatter.title}
                         </h1>
                     </Link>
@@ -77,7 +77,7 @@ const Homepage = ({ edges }: Props) => {
                                     className={styles['homepage__previous__title']}
                                     to={edge.node.fields.slug}
                                 >
-                                    <h1>
+                                    <h1 className='magic-link'>
                                         {edge.node.frontmatter.title}
                                     </h1>
                                 </ Link>
