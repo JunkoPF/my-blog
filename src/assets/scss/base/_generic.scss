@@ -1,6 +1,3 @@
-
-  
-
 body {
     margin: 0 0 0 0;
     font-family: $default-font-list;
@@ -13,4 +10,13 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+button {
+    font-size: 1.2rem;
+    font-family: $default-font-list;
+    height: 50px;
+    width: 200px;
+    padding: 0;
+    border: none;
 }

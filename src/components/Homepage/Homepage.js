@@ -89,6 +89,11 @@ const Homepage = ({ edges }: Props) => {
                         </div>
                     ))
                 }
+                <Link to='/archive'>
+                    <button className='magic-button'>
+                        <span>全部文章</span>
+                    </button>
+                </Link>
             </div >
         );
     }
