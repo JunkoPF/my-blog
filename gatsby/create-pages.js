@@ -1,7 +1,9 @@
 'use strict'
 
 const path = require('path');
-const createTagsPages = require('./create-tags-pages');
+
+const createPostsPages = require('./pagination/create-posts-pages.js');
+const createTagsPages = require('./pagination/create-tags-pages.js');
 
 const createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
@@ -16,12 +18,6 @@ const createPages = async ({ graphql, actions }) => {
     createPage({
         path: '/about',
         component: path.resolve('./src/templates/about.js'),
-    });
-
-    // archive
-    createPage({
-        path: '/archive',
-        component: path.resolve('./src/templates/archive.js'),
     });
 
     // tags
@@ -54,6 +50,7 @@ const createPages = async ({ graphql, actions }) => {
         })
     });
 
+    await createPostsPages({ graphql, actions });
     await createTagsPages({ graphql, actions });
 }
 

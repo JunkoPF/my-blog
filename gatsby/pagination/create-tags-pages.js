@@ -3,7 +3,7 @@
 const path = require('path');
 const _ = require('lodash');
 
-const createTagsPages = async ({ graphql, actions }) => {
+const createTagsList = async ({ graphql, actions }) => {
     const { createPage } = actions;
 
     const result = await graphql(`
@@ -30,4 +30,4 @@ const createTagsPages = async ({ graphql, actions }) => {
     });
 }
 
-module.exports = createTagsPages;
+module.exports = createTagsList;
