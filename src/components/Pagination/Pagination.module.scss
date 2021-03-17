@@ -1,8 +1,11 @@
 .pagination {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: center;
     margin: auto;
-    width: 80%;
+
+    button {
+        margin-right: 2rem;
+        width: 8rem;
+    }
 }

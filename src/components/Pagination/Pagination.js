@@ -6,23 +6,14 @@ const Pagination = ({
     hasPrevPage, hasNextPage, prevPagePath, nextPagePath
 }) => (
         <div className={styles['pagination']}>
-            {/*
-            {hasPrevPage ? (<Link to={prevPagePath}>Previous</Link>) : (<div>Previous</div>)}
-            {hasNextPage ? (<Link to={nextPagePath}>Next</Link>) : (<div>Next</div>)}
-            */}
-
             {
                 <Link to={prevPagePath}>
-                    <button className={hasPrevPage ? 'magic-button' : null}>
-                        Prev
-                    </button>
+                    {hasPrevPage ? (<button className='magic-button'>上一页</button>) : null}
                 </Link>
             }
             {
                 <Link to={nextPagePath}>
-                    <button className={hasNextPage ? 'magic-button' : null}>
-                        Next
-                    </button>
+                    {hasNextPage ? (<button className='magic-button'>下一页</button>) : null}
                 </Link>
             }
         </div >

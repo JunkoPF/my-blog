@@ -53,8 +53,7 @@ const Homepage = ({ edges }: Props) => {
                     </p>
                     {getTags(lastestEdge.node.frontmatter.tags, true)}
                 </div>
-                <div className={styles['splitLine']}></div>
-
+                <hr />
                 {
                     previousEdges.map((edge) => (
                         <div className={styles['homepage__previous']}>
@@ -94,7 +93,7 @@ const Homepage = ({ edges }: Props) => {
                         <span>全部文章</span>
                     </button>
                 </Link>
-            </div >
+            </div>
         );
     }
 
