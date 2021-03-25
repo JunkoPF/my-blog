@@ -2,25 +2,43 @@
 
 .introbar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
 
-    margin: 3rem 0 1.2rem 0;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 3rem 1rem 1.2rem 1rem;
+
+    &__title {
+        flex: 0 0 60%;
+
+        font-size: 4rem;
+    }
+
+    &__info {
+        flex: 0 0 30%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
     &__photo {
-        border-radius: 50%;
         border-width: 3px;
         border-style: solid;
         border-color: rgb(150, 150, 150);
+
+        height: 200px;
     }
 
     &__name {
-        margin: 2rem 0 2rem 0;
+        margin: 2rem 0 0 0;
         font-size: 2.5rem;
     }
 
     &__intro {
         font-size: 1.3rem;
         max-width: 60%;
+        text-align: end;
     }
 }

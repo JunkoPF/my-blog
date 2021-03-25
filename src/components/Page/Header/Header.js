@@ -2,7 +2,6 @@ import React from 'react';
 import Title from './Title';
 import Menu from './Menu';
 import Introbar from './Introbar';
-import SNSLinks from '../../SNSLinks';
 import styles from './Header.module.scss';
 
 const Header = ({ isIndex }) => {
@@ -17,7 +16,6 @@ const Header = ({ isIndex }) => {
                         isIndex ? (
                             <div className={styles['header__bottom']}>
                                 <Introbar />
-                                <SNSLinks />
                             </div>
                         ) : []
                     }

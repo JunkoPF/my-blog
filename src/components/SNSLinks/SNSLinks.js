@@ -22,21 +22,21 @@ const SNSLinks = () => {
             userName: 'polyethylene',
         },
     ];
+
     return (
-        <div className={styles['snslinks']}>
-            <ul className={styles['snslinks__list']}>
-                {
-                    SNS.map((sns) => (
-                        <li key={sns.siteName} className={styles['snslinks__list__item']}>
-                            <Link to={getLink(sns.siteName, sns.userName)}>
-                                {getIcon(sns.siteName)}
-                            </Link>
-                        </li>
-                    ))
-                }
-            </ul>
-        </div>
+        <ul className={styles['snslist']}>
+            {
+                SNS.map((sns) => (
+                    <li key={sns.siteName} className={styles['snslist__item']}>
+                        <Link to={getLink(sns.siteName, sns.userName)}>
+                            {getIcon(sns.siteName)}
+                        </Link>
+                    </li>
+                ))
+            }
+        </ul>
     );
+    
 }
 
 export default SNSLinks;
