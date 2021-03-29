@@ -11,9 +11,9 @@ module.exports = {
         subtitle: "coming soon...",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum sit delectus in omnis doloremque laboriosam provident reiciendis. Rerum, facere?",
         author: {
-            name: "Polyethylene",
+            name: "聚乙烯",
             photo: "photo.jpg",
-            intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde dolores fuga aliquam similique cum ea non tempora quo ducimus?",
+            intro: "什么叫我竟然直播了？我不直播我干嘛？啊？居然开播了是什么意思啊？这肯定开播呀。以后每天都来直播，一个月31天，每天都能见到我，兄弟们。",
         }
 
     },

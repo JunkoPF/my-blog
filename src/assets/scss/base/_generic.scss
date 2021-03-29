@@ -1,8 +1,8 @@
 body {
     margin: 0 0 0 0;
     font-family: $default-font-list;
-    color: $basic-text-color;
-    background: white;
+    color: $text-color;
+    background: $main-color;
 
     line-break: loose;
 
@@ -27,6 +27,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: $text-color;
     font-family: $default-font-list;
     font-weight: 600;
 }
@@ -44,7 +45,7 @@ hr {
 
 a {
     text-decoration: none;
-    color: $basic-text-color;
+    color: $text-color;
 }
 
 b,
@@ -67,7 +68,7 @@ figure {
 }
 
 figcaption {
-    color: $basic-text-color;
+    color: $text-color;
     font-style: italic;
     margin-bottom: 0;
     text-align: center;

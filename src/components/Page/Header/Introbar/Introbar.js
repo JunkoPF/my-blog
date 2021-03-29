@@ -9,7 +9,9 @@ const Introbar = () => {
     return (
         <div className={styles['introbar']}>
             <h1 className={styles['introbar__title']}>
-                Real quality means making sure that people are proud of the code they write, that they're involved and taking it personally.
+                <Link className='magic-link'>
+                    Real quality means making sure that people are proud of the code they write, that they're involved and taking it personally.
+                </Link>
             </h1>
             <div className={styles['introbar__info']}>
                 <Link to='/about'>

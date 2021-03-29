@@ -5,14 +5,17 @@
     flex-direction: row;
 
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
-    margin: 3rem 1rem 1.2rem 1rem;
+    width: 85%;
+
+    margin: 3rem auto 1.2rem auto;
 
     &__title {
         flex: 0 0 60%;
-
+        font-family: $header-font-list;
         font-size: 4rem;
+        font-weight: 400;
     }
 
     &__info {
@@ -32,11 +35,14 @@
     }
 
     &__name {
+        font-family: $default-font-list;
+
         margin: 2rem 0 0 0;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     &__intro {
+        font-family: $default-font-list;
         font-size: 1.3rem;
         max-width: 60%;
         text-align: end;
